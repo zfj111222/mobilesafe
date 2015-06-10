@@ -118,7 +118,7 @@ public class WatchDogService extends Service {
 
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			System.out.println("接收到了数据库已经改变的广播");
+			System.out.println("接收到数据库已经改变的广播");
 			protectPackname=dao.findAll();
 		}
 		
