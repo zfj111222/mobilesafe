@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zfj="http://schemas.android.com/apk/res/com.zfj123.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#8866ff00"
+        android:gravity="center_horizontal"
+        android:text="设置中心"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <com.zfj123.mobilesafe.ui.SettiingItemView
+        android:id="@+id/siv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        zfj:desc_off="设置自动更新已经关闭"
+        zfj:desc_on="设置自动更新已经开启"
+        zfj:siv_title="设置自动更新" >
+    </com.zfj123.mobilesafe.ui.SettiingItemView>
+
+    <com.zfj123.mobilesafe.ui.SettiingItemView
+        android:id="@+id/siv_show_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        zfj:desc_off="设置号码归属地已经关闭"
+        zfj:desc_on="设置号码归属地已经开启"
+        zfj:siv_title="设置号码归属地" >
+    </com.zfj123.mobilesafe.ui.SettiingItemView>
+    
+    <com.zfj123.mobilesafe.ui.SettiingClickView
+        android:id="@+id/scv_changebg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.zfj123.mobilesafe.ui.SettiingClickView>
+    
+    <com.zfj123.mobilesafe.ui.SettiingItemView
+        android:id="@+id/siv_callsms_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        zfj:desc_off="黑名单拦截已经关闭"
+        zfj:desc_on="黑名单拦截已经开启"
+        zfj:siv_title="黑名单拦截设置" >
+    </com.zfj123.mobilesafe.ui.SettiingItemView>
+    
+    <com.zfj123.mobilesafe.ui.SettiingItemView
+        android:id="@+id/siv_watch_dog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        zfj:desc_off="程序锁看门狗已经关闭"
+        zfj:desc_on="程序锁看门狗已经开启"
+        zfj:siv_title="程序锁拦截设置" >
+    </com.zfj123.mobilesafe.ui.SettiingItemView>
+
+</LinearLayout>

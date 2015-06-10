@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:background="#8866ff00"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="功能列表" />
+    
+    <com.zfj123.mobilesafe.ui.FocusedTextView
+         android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:text="最新病毒库已经发布，更全的毒库保卫您的安全!
+        最新的手机版本已经发布，全新功能等你体验！"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <GridView 
+        android:verticalSpacing="10dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/list_home"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+    </GridView>
+
+</LinearLayout>
